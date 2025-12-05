@@ -62,8 +62,6 @@ public class SecurityConfig {
                         .requestMatchers(mvcMatcherBuilder.pattern("/auth/login")).permitAll()
                         .requestMatchers(mvcMatcherBuilder.pattern("/user/forgetPassword")).permitAll()
                         .requestMatchers(mvcMatcherBuilder.pattern("/user/changePassword")).permitAll()
-                        .requestMatchers(mvcMatcherBuilder.pattern("/invoice/add")).permitAll()
-                        .requestMatchers(mvcMatcherBuilder.pattern("/invoice/add/all")).permitAll()
                         .requestMatchers(mvcMatcherBuilder.pattern("/dashboard/**")).permitAll()
                         .requestMatchers(mvcMatcherBuilder.pattern("/app/server/manage/**")).permitAll()
                         .anyRequest().authenticated()
